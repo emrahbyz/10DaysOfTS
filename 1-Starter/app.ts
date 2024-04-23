@@ -78,3 +78,29 @@ enum PrintMedia {
   Book = "book",
 }
 console.log(PrintMedia.Magazine);
+//                        --Union type--
+let code: string | number = 123;
+console.log(code);
+
+//                        --Any--
+//Tip any olduğu zaman  tip farketmeksızın her bir değeri kabul ediyorum.
+//Anlamına gelir ve bir hata almaz önerilmesede hayat kurtarıcı olabilir.
+let someThing: any = "hello";
+
+someThing = 45;
+console.log(someThing);
+
+let arrs: any[] = ["john", 212, true];
+console.log(arrs);
+
+//                        --Void--
+//Bir fonks'da fonk geriye  değer döndürmüyorsa bunu void ile belirtebiliyoruz.
+function sayHello(): void {}
+//                        --Never--
+///Bir fonks'da sadece hata dönecekse never atanır
+
+//never ile void arasındaki fark voide null ve undefined atanabilir ama nevere atanamaz
+function throwError(errorMsg: string): never {
+  throw new Error(errorMsg);
+}
+throwError("hata");
