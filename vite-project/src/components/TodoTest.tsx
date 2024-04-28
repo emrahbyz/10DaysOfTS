@@ -8,10 +8,10 @@ type todo = {
 const TodoTest = () => {
   const [value, setValue] = useState<string>("");
   const [todos, setTodos] = useState<todo[]>([]);
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: any) => {
     setValue(event.target.value);
   };
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleClick = (event: any) => {
     event.preventDefault();
     const newTodo: todo = {
       id: todos.length + 1,

@@ -5,6 +5,7 @@ import InstructorList from "./components/InstructorList";
 import Request from "./components/Request";
 import TodoTest from "./components/TodoTest";
 import "./App.css";
+import TsTest from "./components/TsTest";
 function App() {
   const instructor = {
     firstName: "Emrah",
@@ -33,6 +34,7 @@ function App() {
       <Request status="succes" />
       <EventActions /> */}
       <TodoTest />
+      <TsTest name="emrah" age={25} />
     </div>
   );
 }
