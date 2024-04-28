@@ -3,7 +3,8 @@ import Home from "./components/Home";
 import Instructor from "./components/Instructor";
 import InstructorList from "./components/InstructorList";
 import Request from "./components/Request";
-
+import TodoTest from "./components/TodoTest";
+import "./App.css";
 function App() {
   const instructor = {
     firstName: "Emrah",
@@ -25,12 +26,13 @@ function App() {
   ];
 
   return (
-    <div>
-      <Home name="Emrah" ProjectNumber={33} />
+    <div className="test">
+      {/* <Home name="Emrah" ProjectNumber={33} />
       <Instructor instructorNameLastName={instructor} />
       <InstructorList instructorNameLastNameList={instructorList} />
       <Request status="succes" />
-      <EventActions />
+      <EventActions /> */}
+      <TodoTest />
     </div>
   );
 }

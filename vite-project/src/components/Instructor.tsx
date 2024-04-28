@@ -1,7 +1,7 @@
 type instructorPros = {
   instructorNameLastName: {
-    firstName: string;
-    lastName: string;
+    firstName: string | number;
+    lastName: string | number;
   };
 };
 const Instructor = (props: instructorPros) => {
