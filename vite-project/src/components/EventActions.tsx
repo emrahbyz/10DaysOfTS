@@ -18,6 +18,7 @@ const EventActions = () => {
 
   return (
     <div>
+      <button></button>
       <button onClick={(event) => handleClick(event, 4)}>Sil</button>
       <input type="text" value={value} onChange={handleChange} />
     </div>
